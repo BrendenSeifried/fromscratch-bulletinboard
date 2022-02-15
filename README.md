@@ -7,6 +7,16 @@ make seperate folders for auth and create pages
 
 Look through past three projects and grab what I need
 
+READ DEMO to get better understanding 
+
+move to auth page use signup signin from half baked 
+
+import supabase info to make sure it works 
+
+create elemets and appnend info 
+
+
+
 
 
 
