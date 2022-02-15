@@ -39,6 +39,7 @@ export function renderNoteDetail(note) {
     infoEl.classList.add('info');
 
 
+
     div.append(nameEl, dateEl, infoEl);
 
     return div;

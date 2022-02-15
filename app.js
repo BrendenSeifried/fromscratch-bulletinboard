@@ -23,11 +23,7 @@ window.addEventListener('load', async () =>{
     for (let note of notes) {
         const noteDeets = renderNoteDetail(note);
         noteDetailContainer.append(noteDeets);
-        console.log(note);
+        //console.log(note);
     }
-
-    
-    // const noteDeets = renderNoteDetail(note);
-    // noteDetailContainer.append(noteDeets);
 
 });

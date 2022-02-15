@@ -8,16 +8,43 @@ export async function getNotes() {
     return checkError(response);    
 }
 
-// export async function getNotes() {
-//     // return the list of all the movies with their director
-//     const resp = await client.from('bulletboard').select(`date`);
-      
-//       //console.log(resp);
-//     return checkError(resp);
-// }
-
-
 
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
+}
+
+//------------------------------------Sign in Sign up stuff---------
+
+export function getUser() {
+    return client.auth.session() && client.auth.session().user;
+    //if (!user) location.replace('../'); 
+}
+
+export async function signupUser(email, password) {
+    const test = await client.auth.signUp({ email: email, password: password });
+    return test.user;
+}
+
+
+export async function signInUser(email, password) {
+    const signUsr = await client.auth.signIn({ email: email, password: password });
+    return signUsr.user;
+}
+
+export async function checkAuth() {
+    const user = await getUser();
+
+    if (!user) location.replace('../index.html'); 
+}
+
+export async function redirectIfLoggedIn() {
+    if (await getUser()) {
+        location.replace('./other-page');
+    }
+}
+
+export async function logout() {
+    await client.auth.signOut();
+    return (window.location.href = '../index.html');
+        
 }
