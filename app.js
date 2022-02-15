@@ -9,21 +9,25 @@
 
 import { getNotes } from './fetch-utils.js';
 import { renderNoteDetail } from './render-utils.js';
-//import { renderDogCard } from './render-utils.js';
 
-const noteDetailContainer = document.getElementById('note-list-container');
+const noteDetailContainer = document.getElementById('note-detail-container');
 
 
 
 
 window.addEventListener('load', async () =>{
-   // const params = new URLSearchParams(window.location.search);
-    //const id = params.get('id');
 
-    const note = await getNotes();
-    console.log(note);
+    const notes = await getNotes();
+    //console.log(notes);
 
-    const noteDeets = renderNoteDetail(note);
-    noteDetailContainer.append(noteDeets);
+    for (let note of notes) {
+        const noteDeets = renderNoteDetail(note);
+        noteDetailContainer.append(noteDeets);
+        console.log(note);
+    }
+
+    
+    // const noteDeets = renderNoteDetail(note);
+    // noteDetailContainer.append(noteDeets);
 
 });

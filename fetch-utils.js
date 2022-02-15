@@ -4,15 +4,19 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getNotes() {
     const response = await client.from('bulletboard').select('*');
-    console.log(response);
+    //console.log(response);
     return checkError(response);    
 }
 
-// export async function getPlane(id) {
-//     const planeID = await client.from('Bulletinboard').select('*').eq('id', id).single();
-//     console.log(planeID);
-//     return checkError(planeID);    
+// export async function getNotes() {
+//     // return the list of all the movies with their director
+//     const resp = await client.from('bulletboard').select(`date`);
+      
+//       //console.log(resp);
+//     return checkError(resp);
 // }
+
+
 
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
