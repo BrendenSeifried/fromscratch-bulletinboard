@@ -1,4 +1,15 @@
 ## The Golden Rule: 
+make supabase for project 
+
+link supabase 
+
+make seperate folders for auth and create pages 
+
+Look through past three projects and grab what I need
+
+
+
+
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
 
