@@ -14,8 +14,14 @@ const noteDetailContainer = document.getElementById('note-detail-container');
 
 const logInBtn = document.getElementById('loginbtn');
 
+const createBtn = document.getElementById('createbtn');
+
 logInBtn.addEventListener('click', () =>{
     location.replace('./authpage');
+});
+
+createBtn.addEventListener('click', () =>{
+    location.replace('./createpage');
 });
 
 
