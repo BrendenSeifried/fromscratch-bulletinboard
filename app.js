@@ -12,7 +12,11 @@ import { renderNoteDetail } from './render-utils.js';
 
 const noteDetailContainer = document.getElementById('note-detail-container');
 
+const logInBtn = document.getElementById('loginbtn');
 
+logInBtn.addEventListener('click', () =>{
+    location.replace('./authpage');
+});
 
 
 window.addEventListener ('load', async () =>{
