@@ -15,7 +15,7 @@ const noteDetailContainer = document.getElementById('note-detail-container');
 
 
 
-window.addEventListener('load', async () =>{
+window.addEventListener ('load', async () =>{
 
     const notes = await getNotes();
     //console.log(notes);

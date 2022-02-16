@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/home.css">
     <title>Document</title>
 </head>
-<body>
-    <main class="autherize-contain">
-        <div class="top">
-            <div class="auth-upper-contain">
-                <form id="sign-in">
-                    <h2>Sign In</h2>
-                    <h3>Email</h3><input type="email" name="email" id="sign-in-email"></input>
-                    <h3>Password</h3><input type="password" name="password" id="sign-in-password"></input>
-                    <button>Enter</button>
-                </form>
-            </div>
-        </div>
-        <div class="bottom">
-            <div class="auth-lower-contain">
-                <form id="sign-up">
-                    <h2>Sign Up</h2>
-                    <h3>Email</h3><input type="email" name="email" id="sign-in-email"></input>
-                    <h3>Password</h3><input type="password" name="password" id="sign-in-password"></input>
-                    <button>Enter</button>
 
-                </form>
-            </div>
+<body>
+    <header>
+        <div class="gutter-right logo">
+            <!-- <img src="../assets/big-logo.png" /> -->
         </div>
+    </header>    
+    <button id="logout">Logout</button>
+    <main>
+        <h1>You are logged in!</h1>
     </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+    </footer>
     <script type="module" src="./create.js"></script>
 </body>
+
 </html>
