@@ -50,9 +50,3 @@ logoutBtn.addEventListener('click', () => {
     
     logout();
 });
-
-const checkBtn = document.getElementById('check');
-
-// checkBtn.addEventListener('click', () => {
-//     return (window.location.href = '../index.html');
-// });
