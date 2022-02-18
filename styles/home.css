@@ -27,3 +27,9 @@
     font-size: medium;
     font-weight: bolder;
 }
+
+#toop {
+    border: solid 3px green;
+    background-color: green;
+    box-shadow: 10px 5px 5px rgb(3, 2, 2);
+}
