@@ -43,6 +43,12 @@ export async function redirectIfLoggedIn() {
     }
 }
 
+export async function createStuff(stuff, stuff2, stuff3) {
+    const response = await client.from('bulletboard').insert({ name: stuff, date: stuff2, info: stuff3 });
+    console.log(response, 'testing');
+    return checkError(response);
+}
+
 export async function logout() {
     await client.auth.signOut();
     return (window.location.href = '../index.html');
