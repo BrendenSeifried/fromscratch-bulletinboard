@@ -29,6 +29,7 @@ toopForm.addEventListener('submit', async (e) => {
     const info = toopData.get('info');
    // console.log(toop, 'test');
     await createStuff(name, date, info);
+    return (window.location.href = '../index.html');
   
 });
 
@@ -52,6 +53,6 @@ logoutBtn.addEventListener('click', () => {
 
 const checkBtn = document.getElementById('check');
 
-checkBtn.addEventListener('click', () => {
-    return (window.location.href = '../index.html');
-});
+// checkBtn.addEventListener('click', () => {
+//     return (window.location.href = '../index.html');
+// });
