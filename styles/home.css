@@ -41,4 +41,15 @@ a:link, a:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    width: 100px;
+  }
+
+#logout{
+    background-color: #8f807f;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
   }

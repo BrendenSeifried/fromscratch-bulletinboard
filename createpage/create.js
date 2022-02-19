@@ -2,7 +2,7 @@ import { checkAuth, logout, createStuff } from '../fetch-utils.js';
 
 checkAuth();
 const toopForm = document.getElementById('toop');
-const goHome = document.getElementById('go-home');
+
 
 
 
@@ -20,7 +20,7 @@ toopForm.addEventListener('submit', async (e) => {
 });
 
 
-goHome.addEventListener('click', () =>)
+
 
 const logoutBtn = document.getElementById('logout');
 
