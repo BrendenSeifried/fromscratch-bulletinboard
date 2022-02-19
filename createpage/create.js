@@ -1,21 +1,9 @@
-// import { checkAuth, logout } from '../fetch-utils.js';
-
-// checkAuth();
-
-// const logoutBtn = document.getElementById('logout');
-
-// logoutBtn.addEventListener('click', () => {
-//     logout();
-// });
-
-
 import { checkAuth, logout, createStuff } from '../fetch-utils.js';
 
 checkAuth();
 const toopForm = document.getElementById('toop');
-// const name = document.getElementById('Name');
-// const date = document.getElementById('Date');
-// const info = document.getElementById('Info');
+const goHome = document.getElementById('go-home');
+
 
 
 
@@ -23,26 +11,16 @@ toopForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     const toopData = new FormData(toopForm);
-    //const toop = toopData.get('type');
     const name = toopData.get('name');
     const date = toopData.get('date');
     const info = toopData.get('info');
-   // console.log(toop, 'test');
     await createStuff(name, date, info);
     return (window.location.href = '../index.html');
   
 });
 
-// Name.addEventListener('submit', async (e) => {
-//     e.preventDefault();
-    
-//     const nameData = new FormData(Name);
-//     const name2 = nameData.get('Name');
-//     const Date = nameData.get('date');
-//     //console.log(toop, 'test');
-//     await createStuff(name2, Date);
-  
-// });
+
+goHome.addEventListener('click', () =>)
 
 const logoutBtn = document.getElementById('logout');
 
